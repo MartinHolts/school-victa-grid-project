@@ -1,0 +1,48 @@
+{
+    "name": "GridProject",
+    "settings": {
+        "cmd": {
+            "license": "commercial"
+        },
+        "canvasControls": {
+            "viewportSize": {
+                "name": "Auto Expand",
+                "builtIn": true,
+                "height": null,
+                "width": null
+            }
+        },
+        "urlPrefix": "",
+        "exportPath": "",
+        "projectHasEnabledWebServer": false,
+        "lockUrlPrefix": false,
+        "buildShouldOverwriteIndex": true,
+        "generateArchitectVersion": true,
+        "spacesToIndent": 4,
+        "lineEnding": "CRLF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "installStatus": "Not Installed",
+        "displayfield-ExtBox1-1179-inputEl": "a new version of the framework is available"
+    },
+    "xdsVersion": "3.2.0",
+    "xdsBuild": 339,
+    "schemaVersion": 1,
+    "upgradeVersion": 310000000001,
+    "framework": "ext42",
+    "viewOrderMap": {
+        "view": [
+            "70aa742a-0203-4718-b9b7-870623908f9d"
+        ],
+        "store": [],
+        "controller": [],
+        "model": [],
+        "resource": [
+            "12b7eb76-5d24-4fc4-904e-86045aef0528",
+            "c11f8af0-5654-4f19-a06c-04c89697b7b8"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

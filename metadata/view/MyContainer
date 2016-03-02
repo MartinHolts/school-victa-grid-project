@@ -26,6 +26,7 @@
             "userConfig": {
                 "height": 451,
                 "itemId": "runsGrid",
+                "store": "Runs",
                 "title": "Jooksud",
                 "width": "75%"
             },
@@ -40,7 +41,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "dataIndex": "string",
+                        "dataIndex": "name",
                         "designer|displayName": "name",
                         "text": "Nimi"
                     },
@@ -55,7 +56,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "dataIndex": "number",
+                        "dataIndex": "year",
                         "designer|displayName": "year",
                         "text": "Aasta"
                     },
@@ -63,33 +64,33 @@
                     "designerId": "32ccc7c6-6762-427f-bfea-651c49bb466f"
                 },
                 {
-                    "type": "Ext.grid.column.Date",
+                    "type": "Ext.grid.column.Column",
                     "reference": {
                         "name": "columns",
                         "type": "array"
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "dataIndex": "date",
+                        "dataIndex": "result",
                         "designer|displayName": "result",
                         "text": "Tulemus"
                     },
-                    "name": "MyDateColumn",
+                    "name": "MyColumn1",
                     "designerId": "d65f938f-6e5e-40dc-b584-77e6b80197c6"
                 },
                 {
-                    "type": "Ext.grid.column.Boolean",
+                    "type": "Ext.grid.column.Column",
                     "reference": {
                         "name": "columns",
                         "type": "array"
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "dataIndex": "bool",
+                        "dataIndex": "age_class",
                         "designer|displayName": "age_class",
                         "text": "Vanuseklass"
                     },
-                    "name": "MyBooleanColumn",
+                    "name": "MyColumn2",
                     "designerId": "8e216c4d-9c57-497e-b271-449727a0b7d8"
                 },
                 {

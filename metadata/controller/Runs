@@ -32,7 +32,9 @@
                     "application"
                 ],
                 "fn": "init",
-                "implHandler": null
+                "implHandler": [
+                    "main = this;"
+                ]
             },
             "name": "init",
             "designerId": "cc23206a-8a4d-44d4-98ba-bd1384d0b60e"

@@ -19,8 +19,6 @@ Ext.define('GridApp.view.MyContainer', {
     requires: [
         'Ext.grid.Panel',
         'Ext.grid.column.Number',
-        'Ext.grid.column.Date',
-        'Ext.grid.column.Boolean',
         'Ext.grid.View',
         'Ext.grid.feature.RowBody',
         'Ext.selection.CellModel',
@@ -47,25 +45,26 @@ Ext.define('GridApp.view.MyContainer', {
                     itemId: 'runsGrid',
                     width: '75%',
                     title: 'Jooksud',
+                    store: 'Runs',
                     columns: [
                         {
                             xtype: 'gridcolumn',
-                            dataIndex: 'string',
+                            dataIndex: 'name',
                             text: 'Nimi'
                         },
                         {
                             xtype: 'numbercolumn',
-                            dataIndex: 'number',
+                            dataIndex: 'year',
                             text: 'Aasta'
                         },
                         {
-                            xtype: 'datecolumn',
-                            dataIndex: 'date',
+                            xtype: 'gridcolumn',
+                            dataIndex: 'result',
                             text: 'Tulemus'
                         },
                         {
-                            xtype: 'booleancolumn',
-                            dataIndex: 'bool',
+                            xtype: 'gridcolumn',
+                            dataIndex: 'age_class',
                             text: 'Vanuseklass'
                         }
                     ],

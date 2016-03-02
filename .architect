@@ -169,10 +169,10 @@
         "topInstance": "70aa742a-0203-4718-b9b7-870623908f9d"
     },
     "inspectorState": {
-        "topInstance": "2111b7e4-7c70-4576-b3b5-cd2d36aed083",
-        "selectedInstance": "2111b7e4-7c70-4576-b3b5-cd2d36aed083"
+        "topInstance": "70aa742a-0203-4718-b9b7-870623908f9d",
+        "selectedInstance": "8e216c4d-9c57-497e-b271-449727a0b7d8"
     },
-    "editMode": "code",
+    "editMode": "design",
     "userSettings": {
         "no-cmd": true
     }

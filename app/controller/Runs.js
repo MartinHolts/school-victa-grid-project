@@ -50,6 +50,8 @@ Ext.define('GridApp.controller.Runs', {
     },
 
     init: function(application) {
+                main = this;
+
         this.control({
             "#save": {
                 click: this.onSaveClick

@@ -11,7 +11,7 @@
         "designer|userClassName": "MyContainer",
         "height": 472,
         "layout": "hbox",
-        "width": 657
+        "width": null
     },
     "name": "MyContainer",
     "designerId": "70aa742a-0203-4718-b9b7-870623908f9d",
@@ -25,8 +25,9 @@
             "codeClass": null,
             "userConfig": {
                 "height": 451,
-                "title": "My Grid Panel",
-                "width": 499
+                "itemId": "runsGrid",
+                "title": "Jooksud",
+                "width": "75%"
             },
             "name": "MyGridPanel",
             "designerId": "ed94a5f1-047a-4a22-8ebf-5f5c9ae076e9",
@@ -40,7 +41,8 @@
                     "codeClass": null,
                     "userConfig": {
                         "dataIndex": "string",
-                        "text": "String"
+                        "designer|displayName": "name",
+                        "text": "Nimi"
                     },
                     "name": "MyColumn",
                     "designerId": "db66de72-8ecd-40db-aa2b-1e5ee2a905ed"
@@ -54,7 +56,8 @@
                     "codeClass": null,
                     "userConfig": {
                         "dataIndex": "number",
-                        "text": "Number"
+                        "designer|displayName": "year",
+                        "text": "Aasta"
                     },
                     "name": "MyNumberColumn",
                     "designerId": "32ccc7c6-6762-427f-bfea-651c49bb466f"
@@ -68,7 +71,8 @@
                     "codeClass": null,
                     "userConfig": {
                         "dataIndex": "date",
-                        "text": "Date"
+                        "designer|displayName": "result",
+                        "text": "Tulemus"
                     },
                     "name": "MyDateColumn",
                     "designerId": "d65f938f-6e5e-40dc-b584-77e6b80197c6"
@@ -82,7 +86,8 @@
                     "codeClass": null,
                     "userConfig": {
                         "dataIndex": "bool",
-                        "text": "Boolean"
+                        "designer|displayName": "age_class",
+                        "text": "Vanuseklass"
                     },
                     "name": "MyBooleanColumn",
                     "designerId": "8e216c4d-9c57-497e-b271-449727a0b7d8"
@@ -96,19 +101,6 @@
                     "codeClass": null,
                     "name": "MyGridView",
                     "designerId": "c3389fd1-6329-49fb-aca1-5f498ad38241"
-                },
-                {
-                    "type": "Ext.grid.column.Column",
-                    "reference": {
-                        "name": "columns",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "text": "MyColumn1"
-                    },
-                    "name": "MyColumn1",
-                    "designerId": "ea910122-ba69-41fc-bfec-8f014ef6aaf9"
                 },
                 {
                     "type": "Ext.grid.feature.RowBody",
@@ -141,13 +133,203 @@
             "codeClass": null,
             "userConfig": {
                 "bodyPadding": 10,
-                "designer|snapToGrid": 10,
-                "layout": "absolute",
-                "layout|flex": 1,
-                "title": "My Form"
+                "defaults": [
+                    "{",
+                    "    labelWidth: 60",
+                    "}"
+                ],
+                "itemId": "defForm",
+                "layout|flex": null,
+                "title": "Detailid",
+                "width": "25%"
             },
             "name": "MyForm",
-            "designerId": "205410c5-9a9f-4e15-bbf2-59b6626e42f7"
+            "designerId": "205410c5-9a9f-4e15-bbf2-59b6626e42f7",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "name",
+                        "fieldLabel": "Nimi",
+                        "labelWidth": null
+                    },
+                    "name": "MyTextField1",
+                    "designerId": "2a34942a-1349-414d-9bd1-1d50fdc8654d"
+                },
+                {
+                    "type": "Ext.form.field.Number",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "year",
+                        "fieldLabel": "Aasta",
+                        "labelWidth": null
+                    },
+                    "name": "MyNumberField3",
+                    "designerId": "681c69c3-7b01-423b-a9a6-7687ec825dfc"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "result",
+                        "fieldLabel": "Tulemus",
+                        "labelWidth": null
+                    },
+                    "name": "MyTextField2",
+                    "designerId": "1fd6899e-49c2-4622-a2b3-c8305dbe9d50"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "age_class",
+                        "fieldLabel": "Vanuseklass",
+                        "labelWidth": 80
+                    },
+                    "name": "MyTextField3",
+                    "designerId": "5c2f224c-78a1-4d50-8f8d-f9d791b7050d"
+                },
+                {
+                    "type": "Ext.form.field.Number",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "run_number",
+                        "fieldLabel": "Jooksu number",
+                        "labelWidth": null
+                    },
+                    "name": "MyNumberField2",
+                    "designerId": "2729a22d-702f-4a02-aa27-57e5d6584e61"
+                },
+                {
+                    "type": "Ext.form.field.Number",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "start",
+                        "fieldLabel": "Stardi positsioon",
+                        "labelWidth": null
+                    },
+                    "name": "MyNumberField4",
+                    "designerId": "077150df-dd4e-4e60-971b-ca210e87e27c"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "birth",
+                        "fieldLabel": "Sünniaeg",
+                        "labelWidth": null
+                    },
+                    "name": "MyTextField4",
+                    "designerId": "5820dd10-1ea4-4af7-8da8-999d4961695b"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "county",
+                        "fieldLabel": "Maakond",
+                        "labelWidth": null
+                    },
+                    "name": "MyTextField",
+                    "designerId": "979dae57-74f0-499d-8d52-55738887ec0c"
+                },
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "stretch",
+                        "container|pack": "center",
+                        "layout": "hbox",
+                        "margin": 0
+                    },
+                    "name": "MyContainer1",
+                    "designerId": "da14d2f8-963f-4b29-9edf-e9a2f66fac79",
+                    "cn": [
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "itemId": "save",
+                                "margin": "0 5 0 5",
+                                "text": "Salvesta"
+                            },
+                            "name": "MyButton",
+                            "designerId": "5e29b578-ff10-4ac2-9ab0-5c0d9cdbd657"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "itemId": "reset",
+                                "margin": "0 5 0 5",
+                                "text": "Tühjenda"
+                            },
+                            "name": "MyButton1",
+                            "designerId": "bc66d155-adb4-4e6c-b25e-44069750b4c9"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "itemId": "deselect",
+                                "margin": "0 5 0 5",
+                                "text": "Tühista"
+                            },
+                            "name": "MyButton2",
+                            "designerId": "a7460f78-5451-428c-8ec9-4b183e3b71e0"
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }

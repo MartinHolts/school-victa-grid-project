@@ -24,11 +24,12 @@ Ext.define('GridApp.view.MyContainer', {
         'Ext.grid.View',
         'Ext.grid.feature.RowBody',
         'Ext.selection.CellModel',
-        'Ext.form.Panel'
+        'Ext.form.Panel',
+        'Ext.form.field.Number',
+        'Ext.button.Button'
     ],
 
     height: 472,
-    width: 657,
 
     layout: {
         type: 'hbox',
@@ -43,32 +44,29 @@ Ext.define('GridApp.view.MyContainer', {
                 {
                     xtype: 'gridpanel',
                     height: 451,
-                    width: 499,
-                    title: 'My Grid Panel',
+                    itemId: 'runsGrid',
+                    width: '75%',
+                    title: 'Jooksud',
                     columns: [
                         {
                             xtype: 'gridcolumn',
                             dataIndex: 'string',
-                            text: 'String'
+                            text: 'Nimi'
                         },
                         {
                             xtype: 'numbercolumn',
                             dataIndex: 'number',
-                            text: 'Number'
+                            text: 'Aasta'
                         },
                         {
                             xtype: 'datecolumn',
                             dataIndex: 'date',
-                            text: 'Date'
+                            text: 'Tulemus'
                         },
                         {
                             xtype: 'booleancolumn',
                             dataIndex: 'bool',
-                            text: 'Boolean'
-                        },
-                        {
-                            xtype: 'gridcolumn',
-                            text: 'MyColumn1'
+                            text: 'Vanuseklass'
                         }
                     ],
                     features: [
@@ -82,10 +80,77 @@ Ext.define('GridApp.view.MyContainer', {
                 },
                 {
                     xtype: 'form',
-                    flex: 1,
-                    layout: 'absolute',
+                    itemId: 'defForm',
+                    width: '25%',
+                    defaults: {
+                        labelWidth: 60
+                    },
                     bodyPadding: 10,
-                    title: 'My Form'
+                    title: 'Detailid',
+                    items: [
+                        {
+                            xtype: 'textfield',
+                            fieldLabel: 'Nimi'
+                        },
+                        {
+                            xtype: 'numberfield',
+                            fieldLabel: 'Aasta'
+                        },
+                        {
+                            xtype: 'textfield',
+                            fieldLabel: 'Tulemus'
+                        },
+                        {
+                            xtype: 'textfield',
+                            fieldLabel: 'Vanuseklass',
+                            labelWidth: 80
+                        },
+                        {
+                            xtype: 'numberfield',
+                            fieldLabel: 'Jooksu number'
+                        },
+                        {
+                            xtype: 'numberfield',
+                            fieldLabel: 'Stardi positsioon'
+                        },
+                        {
+                            xtype: 'textfield',
+                            fieldLabel: 'Sünniaeg'
+                        },
+                        {
+                            xtype: 'textfield',
+                            fieldLabel: 'Maakond'
+                        },
+                        {
+                            xtype: 'container',
+                            margin: 0,
+                            layout: {
+                                type: 'hbox',
+                                align: 'stretch',
+                                pack: 'center'
+                            },
+                            items: [
+                                {
+                                    xtype: 'button',
+                                    itemId: 'save',
+                                    margin: '0 5 0 5',
+                                    text: 'Salvesta'
+                                },
+                                {
+                                    xtype: 'button',
+                                    itemId: 'reset',
+                                    margin: '0 5 0 5',
+                                    text: 'Tühjenda'
+                                },
+                                {
+                                    xtype: 'button',
+                                    itemId: 'deselect',
+                                    margin: '0 5 0 5',
+                                    text: 'Tühista'
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         });

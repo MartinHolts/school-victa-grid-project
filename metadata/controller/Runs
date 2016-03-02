@@ -33,7 +33,8 @@
                 ],
                 "fn": "init",
                 "implHandler": [
-                    "main = this;"
+                    "main = this;",
+                    "main.getRunsStore().load();"
                 ]
             },
             "name": "init",

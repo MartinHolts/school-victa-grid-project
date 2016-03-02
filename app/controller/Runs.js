@@ -51,6 +51,7 @@ Ext.define('GridApp.controller.Runs', {
 
     init: function(application) {
                 main = this;
+                main.getRunsStore().load();
 
         this.control({
             "#save": {

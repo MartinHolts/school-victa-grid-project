@@ -6,8 +6,127 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "Runs"
+        "designer|userClassName": "Runs",
+        "models": [
+            "Runs"
+        ],
+        "stores": [
+            "Runs"
+        ],
+        "views": [
+            "MyContainer"
+        ]
     },
     "name": "MyController",
-    "designerId": "2111b7e4-7c70-4576-b3b5-cd2d36aed083"
+    "designerId": "2111b7e4-7c70-4576-b3b5-cd2d36aed083",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "application"
+                ],
+                "fn": "init",
+                "implHandler": null
+            },
+            "name": "init",
+            "designerId": "cc23206a-8a4d-44d4-98ba-bd1384d0b60e"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "runsGrid",
+                "selector": "#runsGrid"
+            },
+            "name": "runsGrid",
+            "designerId": "c843d175-a9a9-4ad7-8256-5e83aaeeaca9"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "defForm",
+                "selector": "#defForm"
+            },
+            "name": "defForm",
+            "designerId": "f87b8357-faff-40e3-9fcc-e76aa2ca8a5b"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#save",
+                "designer|params": [
+                    "button",
+                    "e",
+                    "eOpts"
+                ],
+                "designer|targetType": "Ext.button.Button",
+                "fn": "onSaveClick",
+                "name": "click"
+            },
+            "name": "onSaveClick",
+            "designerId": "d3dc4dcc-38e5-426a-8e80-de84d61edfe2"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#reset",
+                "designer|params": [
+                    "button",
+                    "e",
+                    "eOpts"
+                ],
+                "designer|targetType": "Ext.button.Button",
+                "fn": "onResetClick",
+                "name": "click"
+            },
+            "name": "onResetClick",
+            "designerId": "1527e8ae-8f10-492d-a13e-19e692fed6cf"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#deselect",
+                "designer|params": [
+                    "button",
+                    "e",
+                    "eOpts"
+                ],
+                "designer|targetType": "Ext.button.Button",
+                "fn": "onDeselectClick",
+                "name": "click"
+            },
+            "name": "onDeselectClick",
+            "designerId": "96f5cc1c-d1fe-4585-baf5-ab866a79419b"
+        }
+    ]
 }

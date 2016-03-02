@@ -34,11 +34,15 @@
         "view": [
             "70aa742a-0203-4718-b9b7-870623908f9d"
         ],
-        "store": [],
+        "store": [
+            "195f0998-7c96-4c95-8a31-8284eeaf7bdc"
+        ],
         "controller": [
             "2111b7e4-7c70-4576-b3b5-cd2d36aed083"
         ],
-        "model": [],
+        "model": [
+            "de978c1b-705d-4fa2-a045-94b4081c12a3"
+        ],
         "resource": [
             "12b7eb76-5d24-4fc4-904e-86045aef0528",
             "c11f8af0-5654-4f19-a06c-04c89697b7b8"

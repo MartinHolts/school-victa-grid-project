@@ -20,9 +20,6 @@ Ext.Loader.setConfig({
 
 
 Ext.application({
-    views: [
-        'MyContainer'
-    ],
     controllers: [
         'Runs'
     ],

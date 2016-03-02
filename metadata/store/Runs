@@ -1,0 +1,45 @@
+{
+    "type": "jsonpstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Runs",
+        "model": "Runs",
+        "storeId": "Runs"
+    },
+    "name": "MyJsonPStore",
+    "designerId": "195f0998-7c96-4c95-8a31-8284eeaf7bdc",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.JsonP",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "http://data.iitee.ee/db/jooksud.ext.jsonp"
+            },
+            "name": "MyJsonPProxy",
+            "designerId": "700f2a8e-b3bd-4210-b39f-4b54b85c793b",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "data"
+                    },
+                    "name": "MyJsonReader",
+                    "designerId": "a5581443-e635-4bb0-8789-7593f1021cd2"
+                }
+            ]
+        }
+    ]
+}

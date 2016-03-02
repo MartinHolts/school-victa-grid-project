@@ -1,0 +1,145 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Runs"
+    },
+    "name": "MyModel",
+    "designerId": "de978c1b-705d-4fa2-a045-94b4081c12a3",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id"
+            },
+            "name": "MyField",
+            "designerId": "17d375fa-0de4-44f1-a5cc-a6e45d0c617d"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "master"
+            },
+            "name": "MyField1",
+            "designerId": "dfb5f593-d733-491e-b931-c6e3b8eaa120"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "name"
+            },
+            "name": "MyField2",
+            "designerId": "d3d2cbc4-5323-41a3-8954-5eadff97ab57"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "run_number"
+            },
+            "name": "MyField3",
+            "designerId": "bbd52bea-f4af-4825-b50d-0fb4c1634be0"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "year"
+            },
+            "name": "MyField4",
+            "designerId": "4169f916-30d2-46a4-8f2b-e781a14788e6"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "start"
+            },
+            "name": "MyField5",
+            "designerId": "7a8b809e-41a5-4b32-97cf-6582125ac838"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "birth"
+            },
+            "name": "MyField6",
+            "designerId": "83cd6a00-9f1d-4f7f-baf2-95b879144d0d"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "county"
+            },
+            "name": "MyField7",
+            "designerId": "2f806497-247a-4e5c-a27b-4cb4802993ad"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "result"
+            },
+            "name": "MyField8",
+            "designerId": "d27e881d-6698-477e-b422-fefd49a9bae4"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "age_class"
+            },
+            "name": "MyField9",
+            "designerId": "f74e1364-cc7c-4859-9753-1076170fd662"
+        }
+    ]
+}

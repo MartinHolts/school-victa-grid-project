@@ -14,5 +14,53 @@
  */
 
 Ext.define('GridApp.controller.Runs', {
-    extend: 'Ext.app.Controller'
+    extend: 'Ext.app.Controller',
+
+    models: [
+        'Runs'
+    ],
+    stores: [
+        'Runs'
+    ],
+    views: [
+        'MyContainer'
+    ],
+
+    refs: [
+        {
+            ref: 'runsGrid',
+            selector: '#runsGrid'
+        },
+        {
+            ref: 'defForm',
+            selector: '#defForm'
+        }
+    ],
+
+    onSaveClick: function(button, e, eOpts) {
+
+    },
+
+    onResetClick: function(button, e, eOpts) {
+
+    },
+
+    onDeselectClick: function(button, e, eOpts) {
+
+    },
+
+    init: function(application) {
+        this.control({
+            "#save": {
+                click: this.onSaveClick
+            },
+            "#reset": {
+                click: this.onResetClick
+            },
+            "#deselect": {
+                click: this.onDeselectClick
+            }
+        });
+    }
+
 });

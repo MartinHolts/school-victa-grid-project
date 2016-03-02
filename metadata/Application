@@ -9,10 +9,7 @@
         "controllers": [
             "Runs"
         ],
-        "name": "GridApp",
-        "views": [
-            "MyContainer"
-        ]
+        "name": "GridApp"
     },
     "name": "Application",
     "designerId": "application"
